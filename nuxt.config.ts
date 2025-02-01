@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  imports: { autoImport: false },
+  components: { dirs: [] },
   devtools: { enabled: true },
-  modules: ['@nuxthub/core']
+  modules: ['@nuxthub/core', '@nuxtjs/tailwindcss'],
+  hub: {
+    ai: true,
+    blob: true,
+  },
 })
